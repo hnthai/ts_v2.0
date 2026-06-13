@@ -1,0 +1,76 @@
+name: Deploy Web build to GitHub Pages
+
+# Builds the Godot HTML5 export and publishes it to GitHub Pages so the game
+# is playable in a browser (desktop + mobile). Deploys via the Pages
+# environment — it does NOT push to any git branch.
+
+on:
+  push:
+    branches:
+      - claude/game-dev-video-android-fhhtsz
+      - main
+    paths:
+      - "game/**"
+      - ".github/workflows/deploy-web.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment; cancel older in-progress runs.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+env:
+  GODOT_VERSION: "4.3"
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download Godot ${{ env.GODOT_VERSION }} + export templates
+        run: |
+          set -e
+          BASE="https://github.com/godotengine/godot/releases/download/${GODOT_VERSION}-stable"
+          curl -fL -o godot.zip "${BASE}/Godot_v${GODOT_VERSION}-stable_linux.x86_64.zip"
+          curl -fL -o templates.tpz "${BASE}/Godot_v${GODOT_VERSION}-stable_export_templates.tpz"
+          unzip -q godot.zip
+          mv Godot_v${GODOT_VERSION}-stable_linux.x86_64 /usr/local/bin/godot
+          chmod +x /usr/local/bin/godot
+          mkdir -p ~/.local/share/godot/export_templates/${GODOT_VERSION}.stable
+          unzip -q templates.tpz
+          mv templates/* ~/.local/share/godot/export_templates/${GODOT_VERSION}.stable/
+
+      - name: Import project assets
+        working-directory: game
+        run: timeout 300 godot --headless --import || true
+
+      - name: Export Web build
+        working-directory: game
+        run: |
+          set -e
+          mkdir -p ../build/web
+          godot --headless --export-release "Web" ../build/web/index.html
+          # Some hosts need 404 fallback; Pages serves index.html fine.
+          ls -la ../build/web
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: build/web
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
