@@ -1,0 +1,65 @@
+{
+	"id": "chapter01",
+	"title": "Chương 1: Đêm Tông Môn Sụp Đổ",
+	"start": "start",
+	"blocks": {
+		"start": [
+			{ "bg": "sect_gate" },
+			{ "music": "theme_calm" },
+			{ "narrate": "Thanh Vân Tông — từng là một trong tam đại tông môn của Bắc Vực. Nay chỉ còn lại vài gian điện đổ nát và một ông lão tóc bạc." },
+			{ "narrate": "Ta tên Diệp Trần, đệ tử ngoại môn yếu nhất nơi đây. Linh căn khuyết tổn, ba năm không thể luyện khí." },
+			{ "show": "diep_tran", "at": "center" },
+			{ "say": "Diệp Trần", "text": "Lại một ngày quét lá rụng... Có lẽ cả đời này ta cũng chỉ đến thế.", "color": "#7ec8ff" },
+			{ "hide": "all" },
+			{ "bg": "hall" },
+			{ "show": "su_phu", "at": "center" },
+			{ "say": "Vân Lão", "text": "Tiểu Trần, đừng nản. Tông môn ta tuy suy, nhưng đạo tâm con vững hơn kẻ khác mười phần. Đó mới là gốc rễ của tu hành.", "color": "#cfc6a8" },
+			{ "say": "Diệp Trần", "text": "Sư phụ... người luôn nói vậy. Nhưng không có linh khí, đạo tâm thì có ích gì?", "color": "#7ec8ff" },
+			{ "say": "Vân Lão", "text": "Hữu ích hay không, để trời đất trả lời con. Đi nghỉ sớm đi.", "color": "#cfc6a8" },
+			{ "goto": "night" }
+		],
+		"night": [
+			{ "hide": "all" },
+			{ "bg": "night_sky" },
+			{ "music": "theme_tense" },
+			{ "narrate": "Nửa đêm. Một tiếng nổ xé toạc màn đêm. Mùi máu tanh lan khắp sườn núi." },
+			{ "sfx": "boom" },
+			{ "show": "ma_ton", "at": "right" },
+			{ "say": "Huyết Ma Tôn", "text": "Thanh Vân Tông cuối cùng cũng đến hồi tận diệt. Giao Cửu Vân Kiếm Quyết ra đây, lão già!", "color": "#ff5a5a" },
+			{ "show": "su_phu", "at": "left" },
+			{ "say": "Vân Lão", "text": "Huyết Ma... ngươi diệt môn cướp pháp đã quen tay. Nhưng bí pháp Thanh Vân, ngươi đừng hòng!", "color": "#cfc6a8" },
+			{ "narrate": "Sư phụ rút kiếm. Nhưng cảnh giới chênh lệch quá lớn. Một chiêu — chỉ một chiêu." },
+			{ "sfx": "clash" },
+			{ "hide": "all" },
+			{ "bg": "courtyard_night" },
+			{ "show": "su_phu", "at": "center" },
+			{ "say": "Vân Lão", "text": "Tiểu... Trần. Tông môn... giao cho con. Sống... phải sống cho ra dáng một người...", "color": "#cfc6a8" },
+			{ "music": "theme_sad" },
+			{ "hide": "all" },
+			{ "show": "diep_tran", "at": "center" },
+			{ "say": "Diệp Trần", "text": "Sư phụ! SƯ PHỤ!!!", "color": "#7ec8ff" },
+			{ "narrate": "Máu sư phụ thấm xuống nền đá lạnh. Trong lồng ngực Diệp Trần, thứ gì đó vỡ ra — rồi bùng cháy." },
+			{ "goto": "awaken" }
+		],
+		"awaken": [
+			{ "sfx": "chime" },
+			{ "say": "【Hệ Thống】", "text": "Phẫn nộ và đạo tâm cộng hưởng. 【Hệ Thống Sư Tôn】 thức tỉnh.", "color": "#ffd45e" },
+			{ "say": "【Hệ Thống】", "text": "Tôn chỉ: Ngươi không tu cho mình — ngươi thu nhận đệ tử, dạy chúng thành tài. Đệ tử càng mạnh, Sư Tôn càng mạnh.", "color": "#ffd45e" },
+			{ "say": "【Hệ Thống】", "text": "Nhiệm vụ tân thủ: Gánh vác Thanh Vân Tông, thu nhận đệ tử đầu tiên. Phần thưởng: Luyện Khí cảnh viên mãn.", "color": "#ffd45e" },
+			{ "say": "Diệp Trần", "text": "Một hệ thống... vào lúc này sao? Hừ. Có lẽ đây là câu trả lời của trời đất mà sư phụ từng nói.", "color": "#7ec8ff" },
+			{ "narrate": "Diệp Trần đứng dậy giữa đống tro tàn. Lần đầu tiên trong đời, linh khí chảy vào kinh mạch." },
+			{ "choice": [
+				{ "text": "Ta sẽ gánh vác Thanh Vân Tông, dựng lại từ tro tàn.", "set": { "resolve": "duty" }, "goto": "vow" },
+				{ "text": "Ta sẽ truy sát Huyết Ma, dù phải đổi cả tính mạng.", "set": { "resolve": "revenge" }, "goto": "vow" }
+			] }
+		],
+		"vow": [
+			{ "bg": "sunrise_mountain" },
+			{ "music": "theme_calm" },
+			{ "narrate": "Bình minh đầu tiên sau thảm họa rọi lên đỉnh Thanh Vân." },
+			{ "say": "Diệp Trần", "text": "Sư phụ, người yên nghỉ. Con hứa: Thanh Vân Tông sẽ trở lại — và lần này, sẽ không ai có thể chà đạp.", "color": "#7ec8ff" },
+			{ "say": "【Hệ Thống】", "text": "Quyết tâm được ghi nhận. Bắt đầu hành trình Sư Tôn.", "color": "#ffd45e" },
+			{ "next_chapter": "chapter02" }
+		]
+	}
+}

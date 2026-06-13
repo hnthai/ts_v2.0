@@ -1,0 +1,61 @@
+{
+	"id": "chapter04",
+	"title": "Chương 4: Huyết Ma Tái Lâm",
+	"start": "start",
+	"blocks": {
+		"start": [
+			{ "bg": "courtyard_night" },
+			{ "music": "theme_tense" },
+			{ "narrate": "Đêm trăng máu. Sương đỏ tràn xuống đỉnh Thanh Vân. Lịch sử như lặp lại — nhưng lần này, tông môn không còn là kẻ yếu." },
+			{ "show": "trieu_phong", "at": "left" },
+			{ "say": "Triệu Phong", "text": "Sư phụ! Cấm chế ngoài núi bị phá! Là Huyết Ma Giáo — chúng đông như nước lũ!", "color": "#ffb066" },
+			{ "show": "diep_tran", "at": "center" },
+			{ "say": "Diệp Trần", "text": "Lâm Uyển dựng băng tường bảo vệ đệ tử nhỏ. Triệu Phong, theo ta ra cổng. Hôm nay ta phải gặp chủ nhân của chúng.", "color": "#7ec8ff" },
+			{ "goto": "confront" }
+		],
+		"confront": [
+			{ "hide": "all" },
+			{ "bg": "demonic_altar" },
+			{ "music": "theme_battle" },
+			{ "show": "ma_ton", "at": "center" },
+			{ "say": "Huyết Ma Tôn", "text": "Ha ha! Tiểu tử quét lá năm xưa, nay đã thành chưởng môn. Ngươi tưởng ta không nhớ cái mặt khóc lóc bên xác lão già?", "color": "#ff5a5a" },
+			{ "show": "diep_tran", "at": "left" },
+			{ "say": "Diệp Trần", "text": "Ta nhớ. Nhớ từng giây. Hôm nay ngươi tới nộp mạng đúng lúc.", "color": "#7ec8ff" },
+			{ "say": "Huyết Ma Tôn", "text": "Cuồng vọng! Ta là Nguyên Anh đại viên mãn. Còn ngươi? Một Kim Đan dựa hơi đệ tử!", "color": "#ff5a5a" },
+			{ "say": "【Hệ Thống】", "text": "Cảnh báo: chênh lệch cảnh giới lớn. Nhưng — Sư Tôn không chiến đấu một mình.", "color": "#ffd45e" },
+			{ "goto": "strategy" }
+		],
+		"strategy": [
+			{ "choice": [
+				{ "text": "Hợp kích cùng đệ tử — Băng của Uyển, Cương của Phong, Kiếm của ta.", "set": { "tactic": "unity" }, "goto": "fight" },
+				{ "text": "Một mình cản Ma Tôn, ra lệnh đệ tử rút lui bảo toàn.", "set": { "tactic": "solo" }, "goto": "fight" }
+			] }
+		],
+		"fight": [
+			{ "music": "theme_battle" },
+			{ "narrate": "Diệp Trần vung Cửu Vân Kiếm — bí pháp mà sư phụ đã đổi mạng để giữ lại. Kiếm khí xé trời." },
+			{ "sfx": "clash" },
+			{ "show": "lam_uyen", "at": "left" },
+			{ "show": "trieu_phong", "at": "right" },
+			{ "show": "diep_tran", "at": "center" },
+			{ "say": "Triệu Phong", "text": "Sư phụ! Chúng con không rút! Sư môn là một thể, sống chết cùng nhau!", "color": "#ffb066" },
+			{ "say": "Lâm Uyển", "text": "Băng Tâm Quyết — đệ tử khóa kinh mạch của hắn!", "color": "#ff9ecb" },
+			{ "say": "【Hệ Thống】", "text": "Đệ tử đồng tâm. Cơ chế [Sư Đồ Đồng Tu] kích hoạt: sức mạnh đệ tử dồn về Sư Tôn theo cấp số nhân.", "color": "#ffd45e" },
+			{ "say": "Huyết Ma Tôn", "text": "Không thể nào! Sao một Kim Đan lại có uy áp của Nguyên Anh?! Cái... cái hệ thống quái dị gì đây?!", "color": "#ff5a5a" },
+			{ "say": "Diệp Trần", "text": "Đây không phải sức mạnh của riêng ta. Đây là sức mạnh của một sư môn mà ngươi tưởng đã giết chết. Huyết Ma — chuẩn bị trả nợ.", "color": "#7ec8ff" },
+			{ "narrate": "Trận chiến rung chuyển cả đỉnh núi. Nhưng Ma Tôn xảo quyệt, hắn tung độc vụ rút lui khi thấy thế bất lợi." },
+			{ "say": "Huyết Ma Tôn", "text": "Lần này coi như ngươi gặp may! Bổn tôn sẽ trở lại với Huyết Thần Đại Trận — khi đó cả Bắc Vực sẽ chôn cùng ngươi!", "color": "#ff5a5a" },
+			{ "hide": "all" },
+			{ "goto": "aftermath" }
+		],
+		"aftermath": [
+			{ "bg": "sunrise_mountain" },
+			{ "music": "theme_calm" },
+			{ "narrate": "Hắn chạy thoát, nhưng âm mưu đã lộ. Huyết Thần Đại Trận cần một vạn sinh linh — nếu hoàn thành, không ai cản nổi." },
+			{ "show": "diep_tran", "at": "center" },
+			{ "say": "Diệp Trần", "text": "Không thể chờ hắn trở lại. Ta phải tìm đến tổng đàn Huyết Ma, kết liễu trước khi đại trận thành hình.", "color": "#7ec8ff" },
+			{ "say": "【Hệ Thống】", "text": "Nhiệm vụ tối hậu: Phá Huyết Thần Đại Trận, trảm Huyết Ma Tôn. Hoàn thành để đạt cảnh giới【Vô Địch】.", "color": "#ffd45e" },
+			{ "next_chapter": "chapter05" }
+		]
+	}
+}

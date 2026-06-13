@@ -1,0 +1,15 @@
+# Godot 4 project
+.godot/
+.import/
+export.cfg
+android/build/
+*.translation
+
+# Build output
+/build/
+*.apk
+*.aab
+
+# Editor / OS noise
+.DS_Store
+Thumbs.db

@@ -1,0 +1,31 @@
+; Engine configuration file.
+; Godot 4.x project — Visual Novel: "Hệ Thống Sư Tôn Vô Địch Mạnh Nhất"
+
+config_version=5
+
+[application]
+
+config/name="Hệ Thống Sư Tôn Vô Địch"
+config/description="Visual Novel tu tiên — Hệ Thống Sư Tôn Vô Địch Mạnh Nhất"
+run/main_scene="res://scenes/Boot.tscn"
+config/features=PackedStringArray("4.3", "Mobile")
+config/icon="res://icon.svg"
+
+[autoload]
+
+GameState="*res://autoload/GameState.gd"
+Audio="*res://autoload/Audio.gd"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+window/handheld/orientation="landscape"
+
+[rendering]
+
+renderer/rendering_method="mobile"
+renderer/rendering_method.mobile="mobile"
+textures/canvas_textures/default_texture_filter=1

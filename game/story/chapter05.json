@@ -1,0 +1,67 @@
+{
+	"id": "chapter05",
+	"title": "Chương 5: Sư Tôn Vô Địch",
+	"start": "start",
+	"blocks": {
+		"start": [
+			{ "bg": "demonic_altar" },
+			{ "music": "theme_battle" },
+			{ "narrate": "Tổng đàn Huyết Ma Giáo. Huyết Thần Đại Trận đã thắp sáng — vạn linh hồn gào thét trong vòng tròn máu." },
+			{ "show": "ma_ton", "at": "center" },
+			{ "say": "Huyết Ma Tôn", "text": "Muộn rồi, Diệp Trần! Đại trận đã thành 9 phần! Khi viên mãn, ta sẽ là thần giữa nhân gian!", "color": "#ff5a5a" },
+			{ "show": "diep_tran", "at": "left" },
+			{ "show": "lam_uyen", "at": "right" },
+			{ "say": "Diệp Trần", "text": "Còn một phần. Nghĩa là ta vẫn kịp. Lâm Uyển — đóng băng mạch trận. Triệu Phong — mở đường cho ta tới lõi.", "color": "#7ec8ff" },
+			{ "goto": "climax" }
+		],
+		"climax": [
+			{ "narrate": "Triệu Phong lao vào biển ma binh, thân thể Cương Dương rực sáng, mở ra một lối máu. Lâm Uyển dồn toàn lực, băng phong tỏa các mạch của đại trận." },
+			{ "sfx": "boom" },
+			{ "say": "Triệu Phong", "text": "Sư phụ — ĐI! Đừng quay đầu lại! Bọn con cản được!", "color": "#ffb066" },
+			{ "say": "【Hệ Thống】", "text": "Cả hai đệ tử đột phá Nguyên Anh ngay trong sinh tử chiến. 【Sư Đồ Đồng Tu】 đạt tầng cao nhất.", "color": "#ffd45e" },
+			{ "say": "【Hệ Thống】", "text": "Sư Tôn hấp thu truyền thừa của toàn sư môn. Cảnh giới đột phá: Nguyên Anh → Hóa Thần →【VÔ ĐỊCH】.", "color": "#ffd45e" },
+			{ "narrate": "Diệp Trần bước lên giữa cơn bão máu, thân ảnh phủ ánh sáng vạn trượng. Trong khoảnh khắc đó, anh không còn là kẻ quét lá — anh là Sư Tôn." },
+			{ "say": "Huyết Ma Tôn", "text": "Không! Sao có thể?! Sức mạnh này... ngươi rốt cuộc là cái gì?!", "color": "#ff5a5a" },
+			{ "say": "Diệp Trần", "text": "Ta là tổng hòa của một sư môn ngươi không giết nổi. Ta là lời hứa với một ông lão. Cửu Vân Kiếm — Trảm!", "color": "#7ec8ff" },
+			{ "sfx": "clash" },
+			{ "narrate": "Một kiếm. Huyết Thần Đại Trận vỡ tan. Huyết Ma Tôn — tan thành tro bụi cùng dã tâm của hắn." },
+			{ "music": "theme_victory" },
+			{ "hide": "all" },
+			{ "goto": "route_check" }
+		],
+		"route_check": [
+			{ "if": "tactic", "eq": "unity", "goto": "ending_unity", "else": "route_check2" }
+		],
+		"route_check2": [
+			{ "if": "resolve", "eq": "revenge", "goto": "ending_revenge", "else": "ending_duty" }
+		],
+		"ending_unity": [
+			{ "bg": "sunrise_mountain" },
+			{ "narrate": "[Kết thúc: SƯ MÔN BẤT DIỆT]" },
+			{ "show": "diep_tran", "at": "center" },
+			{ "say": "Diệp Trần", "text": "Sức mạnh này chưa từng là của riêng ta. Vì thế nó mới không thể bị đánh bại.", "color": "#7ec8ff" },
+			{ "narrate": "Thanh Vân Tông từ tro tàn vươn lên thành đệ nhất tông môn Bắc Vực. Người ta truyền tụng: nơi đó có một Sư Tôn mạnh nhất — mạnh vì ông khiến mọi đệ tử của mình đều mạnh." },
+			{ "say": "【Hệ Thống】", "text": "Tất cả nhiệm vụ hoàn thành. Đạt danh hiệu cao nhất: 【Vô Địch Sư Tôn】. Truyền thừa bất diệt.", "color": "#ffd45e" },
+			{ "end": "unity" }
+		],
+		"ending_duty": [
+			{ "bg": "sunrise_mountain" },
+			{ "narrate": "[Kết thúc: GÁNH VÁC THIÊN HẠ]" },
+			{ "show": "diep_tran", "at": "center" },
+			{ "say": "Diệp Trần", "text": "Sư phụ, con đã giữ lời. Thanh Vân không những sống lại — mà sẽ che chở cho cả Bắc Vực.", "color": "#7ec8ff" },
+			{ "narrate": "Diệp Trần đặt ra quy củ mới: mọi linh căn 'phế vật' bị thế nhân ruồng bỏ đều có một mái nhà ở Thanh Vân. Một thời đại mới bắt đầu." },
+			{ "say": "【Hệ Thống】", "text": "Đạt danh hiệu: 【Vô Địch Sư Tôn】. Đạo của ngươi là dựng xây.", "color": "#ffd45e" },
+			{ "end": "duty" }
+		],
+		"ending_revenge": [
+			{ "bg": "night_sky" },
+			{ "narrate": "[Kết thúc: MỐI THÙ ĐÃ TRẢ]" },
+			{ "show": "diep_tran", "at": "center" },
+			{ "say": "Diệp Trần", "text": "Mối thù năm xưa đã chôn cùng Huyết Ma. Nhưng sư phụ... vì sao con vẫn thấy trống rỗng?", "color": "#7ec8ff" },
+			{ "say": "Lâm Uyển", "text": "Vì báo thù chỉ là điểm bắt đầu, thưa sư phụ. Còn cả một sư môn cần người dẫn đường phía trước.", "color": "#ff9ecb" },
+			{ "say": "Diệp Trần", "text": "...Con nói đúng. Vậy thì, chúng ta đi tiếp. Con đường của Sư Tôn vẫn còn dài.", "color": "#7ec8ff" },
+			{ "say": "【Hệ Thống】", "text": "Đạt danh hiệu: 【Vô Địch Sư Tôn】. Hận đã buông, đạo mới khai.", "color": "#ffd45e" },
+			{ "end": "revenge" }
+		]
+	}
+}

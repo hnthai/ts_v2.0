@@ -1,0 +1,59 @@
+{
+	"id": "chapter03",
+	"title": "Chương 3: Tỉ Thí Bách Kiếm Môn",
+	"start": "start",
+	"blocks": {
+		"start": [
+			{ "bg": "sect_gate" },
+			{ "music": "theme_tense" },
+			{ "narrate": "Một năm trôi qua. Tin Thanh Vân Tông 'sống lại' truyền đến tai Bách Kiếm Môn — kẻ năm xưa lăm le nuốt chửng địa bàn này." },
+			{ "show": "bach_truong", "at": "center" },
+			{ "say": "Trưởng lão Bách", "text": "Một tông môn tàn tạ cũng dám dựng cờ? Ta cho ngươi một cơ hội: đệ tử hai bên tỉ thí. Thua thì sáp nhập vào Bách Kiếm Môn.", "color": "#9affa0" },
+			{ "show": "diep_tran", "at": "left" },
+			{ "say": "Diệp Trần", "text": "Tỉ thí cũng được. Nhưng nếu các vị thua, từ nay không được bén mảng tới Thanh Vân.", "color": "#7ec8ff" },
+			{ "say": "Trưởng lão Bách", "text": "Khẩu khí lớn đấy. Ta đợi xem đệ tử của ngươi có xứng với cái miệng đó không.", "color": "#9affa0" },
+			{ "goto": "match" }
+		],
+		"match": [
+			{ "hide": "all" },
+			{ "bg": "arena" },
+			{ "music": "theme_battle" },
+			{ "narrate": "Đài tỉ thí dựng giữa quảng trường. Lâm Uyển bước lên, đối mặt một đệ tử Trúc Cơ hậu kỳ của Bách Kiếm Môn." },
+			{ "show": "lam_uyen", "at": "center" },
+			{ "say": "Lâm Uyển", "text": "Sư phụ dạy: băng không phải để phòng thủ, mà để phong tỏa cả chiến trường.", "color": "#ff9ecb" },
+			{ "sfx": "clash" },
+			{ "narrate": "Cửu U Băng Thể bộc phát. Cả đài tỉ thí đóng băng trong nháy mắt. Đối thủ bị phong ấn, không kịp ra chiêu." },
+			{ "say": "Trưởng lão Bách", "text": "Cái gì?! Một phế căn... không, đây là Băng Thể thượng cổ! Sao một tông môn nhỏ lại có người như vậy?!", "color": "#9affa0" },
+			{ "goto": "system_boost" }
+		],
+		"system_boost": [
+			{ "say": "【Hệ Thống】", "text": "Đệ tử [Lâm Uyển] đột phá Kim Đan trong thực chiến. Sư Tôn đồng bộ: cảnh giới tăng vọt sang Kim Đan trung kỳ.", "color": "#ffd45e" },
+			{ "narrate": "Diệp Trần khẽ mỉm cười. Đây chính là con đường của Sư Tôn — anh không cướp cơ duyên của ai, anh tạo ra cơ duyên cho đệ tử, và cùng họ lớn mạnh." },
+			{ "choice": [
+				{ "text": "Ra hiệu cho Lâm Uyển dừng tay, giữ thể diện cho đối thủ.", "set": { "mercy": "yes" }, "goto": "mercy" },
+				{ "text": "Để trận đấu kết thúc dứt khoát, dằn mặt Bách Kiếm Môn.", "set": { "mercy": "no" }, "goto": "harsh" }
+			] }
+		],
+		"mercy": [
+			{ "say": "Lâm Uyển", "text": "Đệ tử dừng tay. Tiền bối, mong từ nay hai môn hòa hảo.", "color": "#ff9ecb" },
+			{ "say": "Trưởng lão Bách", "text": "...Thanh Vân có đệ tử biết tiến biết lui. Lão phu phục. Bách Kiếm Môn xin kết giao.", "color": "#9affa0" },
+			{ "goto": "warning" }
+		],
+		"harsh": [
+			{ "say": "Lâm Uyển", "text": "Băng Phong Thiên Lao!", "color": "#ff9ecb" },
+			{ "sfx": "boom" },
+			{ "say": "Trưởng lão Bách", "text": "Dừng tay! Ta nhận thua! Từ nay Bách Kiếm Môn tuyệt không đụng tới Thanh Vân!", "color": "#9affa0" },
+			{ "goto": "warning" }
+		],
+		"warning": [
+			{ "hide": "all" },
+			{ "bg": "sect_gate" },
+			{ "music": "theme_tense" },
+			{ "say": "Trưởng lão Bách", "text": "Diệp chưởng môn, lão phu nói thật một điều. Gần đây Huyết Ma Giáo trỗi dậy, thôn tính khắp Bắc Vực. Ngươi nổi danh quá nhanh... e sẽ lọt vào mắt chúng.", "color": "#9affa0" },
+			{ "show": "diep_tran", "at": "center" },
+			{ "say": "Diệp Trần", "text": "(Huyết Ma...) Đa tạ nhắc nhở. Ta và chúng — vốn đã có món nợ máu chưa đòi.", "color": "#7ec8ff" },
+			{ "say": "【Hệ Thống】", "text": "Cảnh báo: Huyết Ma Giáo định vị được Thanh Vân Tông. Nhiệm vụ chuỗi chính sắp khởi động.", "color": "#ffd45e" },
+			{ "next_chapter": "chapter04" }
+		]
+	}
+}

@@ -1,0 +1,15 @@
+# Build output (Godot Android exports)
+/build/
+*.apk
+*.aab
+*.keystore
+
+# Godot editor artifacts
+game/.godot/
+game/.import/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc

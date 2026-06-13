@@ -1,0 +1,10 @@
+{
+	"diep_tran":  { "name": "Diệp Trần",      "color": "#7ec8ff" },
+	"su_phu":     { "name": "Vân Lão",         "color": "#cfc6a8" },
+	"lam_uyen":   { "name": "Lâm Uyển",        "color": "#ff9ecb" },
+	"trieu_phong":{ "name": "Triệu Phong",     "color": "#ffb066" },
+	"bach_truong":{ "name": "Trưởng lão Bách", "color": "#9affa0" },
+	"ma_ton":     { "name": "Huyết Ma Tôn",    "color": "#ff5a5a" },
+	"narrator":   { "name": "",                "color": "#ffffff" },
+	"system":     { "name": "【Hệ Thống】",     "color": "#ffd45e" }
+}

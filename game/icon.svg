@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a1330"/>
+      <stop offset="1" stop-color="#4a1430"/>
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="48" fill="url(#bg)"/>
+  <circle cx="128" cy="110" r="58" fill="none" stroke="#ffd45e" stroke-width="6" opacity="0.85"/>
+  <path d="M128 60 L150 150 L128 132 L106 150 Z" fill="#ffd45e"/>
+  <text x="128" y="220" font-family="serif" font-size="64" font-weight="bold"
+        fill="#ffd45e" text-anchor="middle">師</text>
+</svg>
