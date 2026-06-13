@@ -59,9 +59,15 @@ jobs:
       - name: Export Web build
         working-directory: game
         run: |
+          echo "==== export_templates tree ===="
+          ls -la ~/.local/share/godot/export_templates/ || true
+          ls -la ~/.local/share/godot/export_templates/${GODOT_VERSION}.stable/ | head -50 || true
+          echo "==== version.txt ===="
+          cat ~/.local/share/godot/export_templates/${GODOT_VERSION}.stable/version.txt || true
           mkdir -p ../build/web
-          godot --headless --export-release "Web" ../build/web/index.html || true
-          echo "---- build/web ----"
+          echo "==== export (verbose tail) ===="
+          godot --headless --verbose --export-release "Web" ../build/web/index.html 2>&1 | tail -80 || true
+          echo "==== build/web ===="
           ls -la ../build/web || true
           # Fail the step if the export produced nothing.
           test -f ../build/web/index.html
