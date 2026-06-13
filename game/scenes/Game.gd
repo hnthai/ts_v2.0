@@ -304,7 +304,7 @@ func _unhandled_input(event: InputEvent) -> void:
 
 func _load_texture(base_path: String) -> Texture2D:
 	for ext in [".png", ".webp", ".jpg", ".jpeg"]:
-		var p := base_path + ext
+		var p: String = base_path + ext
 		if ResourceLoader.exists(p):
 			return load(p)
 	return null

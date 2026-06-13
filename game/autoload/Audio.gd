@@ -57,7 +57,7 @@ func play_sfx(name: String) -> void:
 
 func _load_stream(base_path: String) -> AudioStream:
 	for ext in [".ogg", ".wav", ".mp3"]:
-		var p := base_path + ext
+		var p: String = base_path + ext
 		if ResourceLoader.exists(p):
 			return load(p)
 	return null
