@@ -1,76 +1,59 @@
 {
 	"id": "chapter02",
-	"title": "Chương 2: Thu Nhận Đệ Tử",
+	"title": "Chương 2: Đại Đệ Tử Lăng Thiên",
 	"start": "start",
 	"blocks": {
 		"start": [
-			{ "bg": "town" },
-			{ "music": "theme_calm" },
-			{ "narrate": "Ba tháng sau. Diệp Trần xuống trấn Lạc Dương dưới chân núi, tìm người có duyên." },
-			{ "show": "lam_uyen", "at": "center" },
-			{ "narrate": "Một thiếu nữ áo vá đang bị đám đệ tử thế gia vây quanh chế giễu." },
-			{ "say": "Lâm Uyển", "text": "Linh căn của ta là 'phế căn' thì liên quan gì đến các người? Tránh ra!", "color": "#ff9ecb" },
-			{ "say": "【Hệ Thống】", "text": "Phát hiện mục tiêu: Lâm Uyển. Ẩn chứa 'Cửu U Băng Thể' — ngàn năm hiếm gặp, bị thế nhân nhìn lầm thành phế căn.", "color": "#ffd45e" },
-			{ "say": "Diệp Trần", "text": "(Băng thể à... đúng là viên ngọc thô.) Cô nương, có muốn bái ta làm sư không?", "color": "#7ec8ff" },
-			{ "say": "Lâm Uyển", "text": "Lại một kẻ đến chế giễu? Ngươi nhìn xem ta, ai thèm nhận một phế căn làm đồ đệ.", "color": "#ff9ecb" },
-			{ "say": "Diệp Trần", "text": "Trong mắt ta không có phế căn, chỉ có người chưa gặp đúng sư phụ. Theo ta, ba năm sau ngươi sẽ khiến cả Bắc Vực câm lặng.", "color": "#7ec8ff" },
-			{ "goto": "uyen_choice" }
-		],
-		"uyen_choice": [
-			{ "choice": [
-				{ "text": "Lập tức truyền cho nàng một quyết tâm pháp để chứng minh.", "set": { "style": "kind" }, "goto": "accept_uyen" },
-				{ "text": "Để nàng tự quyết — kẻ có đạo tâm sẽ tự tìm đến.", "set": { "style": "strict" }, "goto": "accept_uyen" }
-			] }
-		],
-		"accept_uyen": [
-			{ "sfx": "chime" },
-			{ "say": "Lâm Uyển", "text": "...Đệ tử Lâm Uyển, bái kiến sư phụ.", "color": "#ff9ecb" },
-			{ "say": "【Hệ Thống】", "text": "Thu nhận đệ tử [Lâm Uyển]. Sư Tôn nhận: Linh khí +500, lĩnh hội sơ bộ 'Băng Tâm Quyết'.", "color": "#ffd45e" },
-			{ "hide": "all" },
-			{ "goto": "phong" }
-		],
-		"phong": [
 			{ "bg": "forest" },
 			{ "music": "theme_tense" },
-			{ "narrate": "Trên đường về núi, tiếng binh khí vang lên. Một thiếu niên đơn độc chặn một con yêu lang để cứu dân làng." },
-			{ "show": "trieu_phong", "at": "center" },
-			{ "say": "Triệu Phong", "text": "Chạy đi! Để ta cản nó! Dù có chết ta cũng không để nó chạm tới dân làng!", "color": "#ffb066" },
-			{ "say": "【Hệ Thống】", "text": "Phát hiện mục tiêu: Triệu Phong. Thể chất 'Cương Dương Chi Khu', đạo tâm thuần chính — hiếm có khí phách hơn cả thiên phú.", "color": "#ffd45e" },
-			{ "say": "Diệp Trần", "text": "Khí phách tốt. Tiểu tử, gan dạ là gốc của kiếm đạo. Đứng sau ta.", "color": "#7ec8ff" },
-			{ "narrate": "Diệp Trần vung tay, một đạo kiếm khí chém đứt con yêu lang. Lực lượng từ hệ thống khiến chính anh cũng kinh ngạc." },
-			{ "say": "Triệu Phong", "text": "Tiền bối! Khí... khí phách này! Xin cho ta bái sư!", "color": "#ffb066" },
+			{ "narrate": "Bên bờ vực, một thiếu niên rách rưới đang điên cuồng vung một thanh kiếm cùn vào vách đá, tay tóe máu vẫn không dừng." },
+			{ "show": "lang_thien", "at": "center" },
+			{ "say": "Lăng Thiên", "text": "Tám tông môn đuổi ta. Chúng nói kiếm cốt của ta nghịch thiên nhưng tâm tính quá ngông, không ai dám dạy! Vậy ta tự dạy! Ta sẽ chém nát cái thứ 'số mệnh' này!", "color": "#ffb066" },
+			{ "say": "【Hệ Thống】", "text": "Mục tiêu: Lăng Thiên. Thiên Phú 'Vô Tận Kiếm Cốt' — vạn năm hiếm gặp. Bị thế nhân coi là quả bom nổ chậm.", "color": "#ffd45e" },
+			{ "show": "co_huyen", "at": "left" },
+			{ "say": "Cơ Huyền", "text": "Tiểu tử, ngươi chém đá cả ngày rồi. Vách đá có đắc tội gì với ngươi?", "color": "#7ec8ff" },
+			{ "say": "Lăng Thiên", "text": "Lão già ở đâu ra? Tránh ra! Kẻ yếu như ông không hiểu được kiếm đạo của ta đâu!", "color": "#ffb066" },
+			{ "goto": "lesson" }
+		],
+		"lesson": [
+			{ "narrate": "Ta nhìn đường kiếm cuồng loạn của nó. Ngông cuồng, nhưng thuần khiết. Chỉ là... đi sai một bước ngay từ gốc." },
+			{ "say": "Cơ Huyền", "text": "Ngươi chém đá để chứng minh mình mạnh. Nhưng kiếm không phải để thắng đá. Kiếm là để giữ thứ ngươi không muốn mất. Ngươi đang giận ai vậy?", "color": "#7ec8ff" },
+			{ "narrate": "Thanh kiếm trong tay Lăng Thiên khựng lại giữa không trung. Mắt nó đỏ hoe." },
+			{ "say": "Lăng Thiên", "text": "...Mẹ ta. Bà chết vì bọn tu sĩ tranh linh mạch. Ta hèn mọn, không cứu được...", "color": "#ffb066" },
+			{ "say": "Cơ Huyền", "text": "Vậy thì đừng chém đá. Hãy nhớ lại lúc ngươi muốn bảo vệ. Vung lại đi.", "color": "#7ec8ff" },
+			{ "goto": "enlighten" }
+		],
+		"enlighten": [
+			{ "sfx": "clash" },
+			{ "narrate": "Lăng Thiên nhắm mắt, vung kiếm một lần nữa. Lần này không còn cuồng nộ — chỉ còn một ý niệm trong veo. Một đạo kiếm khí trắng xóa xé toạc vách núi, chấn động cả khu rừng." },
+			{ "say": "Lăng Thiên", "text": "Đây... đây là... ta đột phá rồi?! Chỉ với một câu của ông?! Tiền bối, ngài rốt cuộc là ai?!", "color": "#ffb066" },
+			{ "say": "Cơ Huyền", "text": "Ta? Một lão già nhàn rỗi trong Vân Hà Cốc thôi. (Tuyệt đối không thể để nó biết ta là ai.)", "color": "#7ec8ff" },
 			{ "sfx": "chime" },
-			{ "say": "【Hệ Thống】", "text": "Thu nhận đệ tử [Triệu Phong]. Sư Tôn nhận: Thể phách cường hóa, đột phá tới Trúc Cơ cảnh.", "color": "#ffd45e" },
-			{ "goto": "teach" }
+			{ "say": "【Hệ Thống】", "text": "Đệ tử [Lăng Thiên] đại ngộ kiếm ý, một bước lên Trúc Cơ! Sư Tôn nhận thưởng: Vạn Năm Linh Thạch ×1000, Tạo Hóa Đan ×3.", "color": "#ffd45e" },
+			{ "narrate": "Trong đầu Lăng Thiên, hình tượng 'lão già' trước mặt đã âm thầm hóa thành một cao nhân thâm bất khả trắc, ẩn thế giấu danh." },
+			{ "say": "Lăng Thiên", "text": "Đệ tử Lăng Thiên, khẩn cầu sư phụ thu nhận! Ngài không nhận, đệ tử quỳ ở đây không dậy!", "color": "#ffb066" },
+			{ "goto": "accept_branch" }
 		],
-		"teach": [
-			{ "hide": "all" },
-			{ "bg": "courtyard" },
-			{ "music": "theme_calm" },
-			{ "narrate": "Thanh Vân Tông giờ đã có hai đệ tử. Diệp Trần bắt đầu truyền dạy — và mỗi lần đệ tử tiến bộ, anh cảm nhận sức mạnh của chính mình dâng lên." },
-			{ "show": "lam_uyen", "at": "left" },
-			{ "show": "trieu_phong", "at": "right" },
-			{ "say": "Lâm Uyển", "text": "Sư phụ, vì sao người dạy chúng con tận tâm đến vậy, mà chưa từng giữ lại bí pháp cho riêng mình?", "color": "#ff9ecb" },
-			{ "goto": "teach_branch" }
+		"accept_branch": [
+			{ "if": "style", "eq": "lazy", "goto": "accept_lazy", "else": "accept_strict" }
 		],
-		"teach_branch": [
-			{ "choice": [
-				{ "text": "\"Vì sư phụ của ta từng làm vậy với ta.\"", "set": { "bond": "high" }, "goto": "teach_kind" },
-				{ "text": "\"Vì giấu nghề chỉ tạo ra đệ tử yếu. Ta cần các con mạnh.\"", "set": { "bond": "mid" }, "goto": "teach_strict" }
-			] }
-		],
-		"teach_kind": [
-			{ "say": "Diệp Trần", "text": "Vì sư phụ của ta từng làm vậy với ta — cho đến hơi thở cuối cùng. Truyền thừa, là thứ nối dài một người sau khi họ ra đi.", "color": "#7ec8ff" },
-			{ "say": "Triệu Phong", "text": "Đệ tử nguyện khắc cốt lời này.", "color": "#ffb066" },
+		"accept_lazy": [
+			{ "show": "co_huyen", "at": "center" },
+			{ "say": "Cơ Huyền", "text": "Đứng lên đi. Nhận thì nhận. Nhưng ta dạy kiểu lười: ta nói một câu, ngươi tự ngộ mười năm. Còn lại, tự ngươi bay.", "color": "#7ec8ff" },
+			{ "say": "Lăng Thiên", "text": "(Một câu khiến đệ tử ngộ mười năm... sư phụ quả nhiên là đại năng giấu mình!) Đệ tử lĩnh giáo!", "color": "#ffb066" },
 			{ "goto": "chapter_end" }
 		],
-		"teach_strict": [
-			{ "say": "Diệp Trần", "text": "Giấu nghề chỉ tạo ra đệ tử yếu. Một sư môn muốn đứng vững, đệ tử phải mạnh hơn sư phụ. Ta muốn các con vượt qua ta.", "color": "#7ec8ff" },
-			{ "say": "Lâm Uyển", "text": "Vượt qua sư phụ... đệ tử sẽ cố gắng.", "color": "#ff9ecb" },
+		"accept_strict": [
+			{ "show": "co_huyen", "at": "center" },
+			{ "say": "Cơ Huyền", "text": "Đứng lên. Đã bái ta làm sư, ngươi phải luyện căn cơ lại từ đầu, từng đường gân thớ thịt. Ngông cuồng được, nhưng nền móng phải vững.", "color": "#7ec8ff" },
+			{ "say": "Lăng Thiên", "text": "(Sư phụ nghiêm khắc đến vậy, ắt có dụng ý sâu xa!) Đệ tử nguyện khổ luyện!", "color": "#ffb066" },
 			{ "goto": "chapter_end" }
 		],
 		"chapter_end": [
-			{ "say": "【Hệ Thống】", "text": "Tông môn khôi phục giai đoạn 1. Nhiệm vụ mới: Bảo vệ thanh danh Thanh Vân trước Bách Kiếm Môn.", "color": "#ffd45e" },
+			{ "bg": "valley" },
+			{ "music": "theme_calm" },
+			{ "say": "【Hệ Thống】", "text": "Thu nhận đại đệ tử thành công. Vân Hà Cốc chính thức 'mở môn'. Nhiệm vụ mới: bồi dưỡng thêm đệ tử có duyên.", "color": "#ffd45e" },
+			{ "say": "Cơ Huyền", "text": "Một đứa rồi. Mệt. Ta đi ngủ một giấc đã... ai ngờ làm sư phụ cũng tốn sức ghê.", "color": "#7ec8ff" },
 			{ "next_chapter": "chapter03" }
 		]
 	}

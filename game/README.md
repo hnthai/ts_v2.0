@@ -1,9 +1,12 @@
 # Hệ Thống Sư Tôn Vô Địch — Visual Novel (Godot 4)
 
 Game visual novel tu tiên chuyển thể theo cốt truyện *"Hệ Thống Sư Tôn Vô Địch
-Mạnh Nhất"*: Diệp Trần — đệ tử yếu nhất của một tông môn suy tàn — thức tỉnh
-**Hệ Thống Sư Tôn** sau khi sư phụ hy sinh, thu nhận đệ tử và cùng họ trưởng
-thành để trở thành Sư Tôn vô địch. Có **lựa chọn phân nhánh** và **nhiều kết thúc**.
+Mạnh Nhất"*: **Cơ Huyền** xuyên không tới thế giới tu tiên, vừa khai cục đã là
+**cảnh giới vô địch** nhưng chỉ muốn an nhàn. **Hệ Thống Sư Tôn** ép anh thu nhận
+& bồi dưỡng đệ tử — mỗi khi đệ tử (Lăng Thiên, Tô Tuyết, Linh Nhi) lập kỳ tích,
+chấn động thiên hạ, Sư Tôn nhận thưởng hậu hĩnh. Anh giấu kín thân phận, làm
+"lão phế vật" của Vân Hà Cốc, để đệ tử bay cao. Có **lựa chọn phân nhánh** và
+**3 kết thúc** (Vô Địch Sư Tôn / Truyền Thừa Rực Rỡ / An Nhàn Vô Địch).
 
 ## Chạy thử trên máy tính
 1. Cài [**Godot 4.3+**](https://godotengine.org/download) (bản Standard).

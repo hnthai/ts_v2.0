@@ -17,6 +17,7 @@ trong `game/assets/`. Tên file phải khớp tuyệt đối — game tự nhậ
 | File | Prompt gợi ý |
 |---|---|
 | `title.png` | Bìa game: đỉnh núi tiên hùng vĩ trong mây, một bóng kiếm khách đứng nhìn ra xa, ánh tím vàng huyền ảo, hoành tráng |
+| `valley.png` | Vân Hà Cốc: sơn cốc nhỏ thanh bình, suối, ghế trúc, mây trắng vắt ngang, nơi cao nhân ẩn cư |
 | `sect_gate.png` | Cổng tông môn cổ kính trên núi mây, ban ngày, rêu phong, hơi tàn tạ nhưng uy nghiêm |
 | `hall.png` | Đại điện gỗ trong tông môn, ánh nến ấm, cột chạm rồng, trang nghiêm |
 | `courtyard.png` | Sân tu luyện lát đá, cây cổ thụ, ban ngày trong trẻo |
@@ -32,15 +33,15 @@ trong `game/assets/`. Tên file phải khớp tuyệt đối — game tự nhậ
 
 | File | Mô tả prompt |
 |---|---|
-| `diep_tran.png` | Nam chính Diệp Trần: thanh niên tuấn tú, áo bào tu tiên xanh lam, khí chất điềm tĩnh kiên định, ánh kiếm khí mờ |
-| `su_phu.png` | Vân Lão: lão sư tóc bạc, áo nâu vàng giản dị, hiền từ, phong thái cao nhân |
-| `lam_uyen.png` | Lâm Uyển: thiếu nữ áo hồng/trắng, khí chất băng giá thanh lạnh, linh khí băng tuyết quanh người |
-| `trieu_phong.png` | Triệu Phong: thiếu niên cương nghị, áo cam/nâu, vạm vỡ, ánh mắt gan dạ |
-| `bach_truong.png` | Trưởng lão Bách: trung niên kiêu ngạo, áo lục đậm phái kiếm, tay cầm trường kiếm |
-| `ma_ton.png` | Huyết Ma Tôn: phản diện, áo bào đỏ đen, khí tức tà ma, mắt đỏ, hắc khí cuộn quanh |
+| `co_huyen.png` | Sư Tôn Cơ Huyền: nam nhân điềm đạm lười nhác nhưng khí chất thâm bất khả trắc, áo bào xanh lam giản dị, tay cầm chén trà, ánh mắt sâu thẳm giấu cả thiên địa |
+| `lang_thien.png` | Đại đệ tử Lăng Thiên: thiếu niên kiếm tu ngông nghênh nhiệt huyết, áo cam/nâu, ôm trường kiếm, kiếm khí trắng xóa |
+| `to_tuyet.png` | Nhị đệ tử Tô Tuyết: thiếu nữ Huyền Âm Băng Thể, áo trắng xanh, khí chất băng giá thanh lạnh, tuyết bay quanh người |
+| `linh_nhi.png` | Tiểu đệ tử Linh Nhi: bé gái ~8 tuổi đáng yêu, Vạn Linh Chi Tâm, áo hồng, ôm thỏ tuyết, vạn vật linh thú vây quanh |
+| `bach_truong.png` | Trưởng lão Bách (Huyền Thiên Tông): trung niên kiêu ngạo, áo lục đậm phái kiếm, tay cầm trường kiếm |
+| `ma_ton.png` | Huyết Ma Lão Tổ: phản diện, áo bào đỏ đen, khí tức tà ma, mắt đỏ, huyết khí cuộn quanh |
 
-> **Mẹo:** có thể tạo thêm biểu cảm như `lam_uyen_angry.png`, `diep_tran_smile.png`.
-> Engine hỗ trợ `{"show":"lam_uyen","expr":"angry"}` và tự fallback về sprite gốc
+> **Mẹo:** có thể tạo thêm biểu cảm như `lang_thien_angry.png`, `co_huyen_smile.png`.
+> Engine hỗ trợ `{"show":"to_tuyet","expr":"angry"}` và tự fallback về sprite gốc
 > nếu file biểu cảm chưa có.
 
 ## Nhạc & SFX (`game/assets/music/<tên>.{ogg|wav}`)

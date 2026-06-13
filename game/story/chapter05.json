@@ -6,62 +6,65 @@
 		"start": [
 			{ "bg": "demonic_altar" },
 			{ "music": "theme_battle" },
-			{ "narrate": "Tổng đàn Huyết Ma Giáo. Huyết Thần Đại Trận đã thắp sáng — vạn linh hồn gào thét trong vòng tròn máu." },
+			{ "narrate": "Huyết khí ngút trời. Huyết Ma Lão Tổ — Hợp Thể đại viên mãn, kẻ ba trăm năm không ai địch nổi ở Bắc Vực — đứng giữa đại trận máu." },
 			{ "show": "ma_ton", "at": "center" },
-			{ "say": "Huyết Ma Tôn", "text": "Muộn rồi, Diệp Trần! Đại trận đã thành 9 phần! Khi viên mãn, ta sẽ là thần giữa nhân gian!", "color": "#ff5a5a" },
-			{ "show": "diep_tran", "at": "left" },
-			{ "show": "lam_uyen", "at": "right" },
-			{ "say": "Diệp Trần", "text": "Còn một phần. Nghĩa là ta vẫn kịp. Lâm Uyển — đóng băng mạch trận. Triệu Phong — mở đường cho ta tới lõi.", "color": "#7ec8ff" },
-			{ "goto": "climax" }
-		],
-		"climax": [
-			{ "narrate": "Triệu Phong lao vào biển ma binh, thân thể Cương Dương rực sáng, mở ra một lối máu. Lâm Uyển dồn toàn lực, băng phong tỏa các mạch của đại trận." },
-			{ "sfx": "boom" },
-			{ "say": "Triệu Phong", "text": "Sư phụ — ĐI! Đừng quay đầu lại! Bọn con cản được!", "color": "#ffb066" },
-			{ "say": "【Hệ Thống】", "text": "Cả hai đệ tử đột phá Nguyên Anh ngay trong sinh tử chiến. 【Sư Đồ Đồng Tu】 đạt tầng cao nhất.", "color": "#ffd45e" },
-			{ "say": "【Hệ Thống】", "text": "Sư Tôn hấp thu truyền thừa của toàn sư môn. Cảnh giới đột phá: Nguyên Anh → Hóa Thần →【VÔ ĐỊCH】.", "color": "#ffd45e" },
-			{ "narrate": "Diệp Trần bước lên giữa cơn bão máu, thân ảnh phủ ánh sáng vạn trượng. Trong khoảnh khắc đó, anh không còn là kẻ quét lá — anh là Sư Tôn." },
-			{ "say": "Huyết Ma Tôn", "text": "Không! Sao có thể?! Sức mạnh này... ngươi rốt cuộc là cái gì?!", "color": "#ff5a5a" },
-			{ "say": "Diệp Trần", "text": "Ta là tổng hòa của một sư môn ngươi không giết nổi. Ta là lời hứa với một ông lão. Cửu Vân Kiếm — Trảm!", "color": "#7ec8ff" },
-			{ "sfx": "clash" },
-			{ "narrate": "Một kiếm. Huyết Thần Đại Trận vỡ tan. Huyết Ma Tôn — tan thành tro bụi cùng dã tâm của hắn." },
-			{ "music": "theme_victory" },
-			{ "hide": "all" },
+			{ "say": "Huyết Ma Lão Tổ", "text": "Ha ha ha! Cao nhân của các ngươi đâu? Trốn rồi sao? Vậy bổn tổ sẽ bắt đầu từ đám đệ tử nhãi ranh!", "color": "#ff5a5a" },
 			{ "goto": "route_check" }
 		],
 		"route_check": [
-			{ "if": "tactic", "eq": "unity", "goto": "ending_unity", "else": "route_check2" }
+			{ "if": "reveal", "eq": "self", "goto": "ending_invincible", "else": "disciple_fight" }
+		],
+		"disciple_fight": [
+			{ "show": "lang_thien", "at": "left" },
+			{ "show": "to_tuyet", "at": "right" },
+			{ "say": "Lăng Thiên", "text": "Sư phụ tin tụi con. Vậy tụi con tuyệt không lùi! Tô Tuyết — hợp kích!", "color": "#ffb066" },
+			{ "say": "Tô Tuyết", "text": "Hàn Nguyệt phong thiên, kiếm ý phá ma — ĐI!", "color": "#bfe6ff" },
+			{ "sfx": "clash" },
+			{ "narrate": "Băng phong tỏa, kiếm xé trời. Hai đứa trẻ năm xưa nay đã là thiên kiêu khiến cả Bắc Vực nghẹt thở. Nhưng Lão Tổ quá mạnh — chúng dần đuối sức." },
+			{ "say": "【Hệ Thống】", "text": "Đệ tử dốc cạn tiềm năng, đồng loạt đột phá Nguyên Anh trong sinh tử chiến! Cơ chế 【Sư Đồ Đồng Tâm】 đạt đỉnh.", "color": "#ffd45e" },
+			{ "say": "Huyết Ma Lão Tổ", "text": "Đột phá giữa trận?! Đám tiểu quỷ này... rốt cuộc sư phụ chúng đã nhồi nhét thứ gì vào người chúng?!", "color": "#ff5a5a" },
+			{ "show": "linh_nhi", "at": "center" },
+			{ "say": "Linh Nhi", "text": "Đại sư huynh, nhị sư tỷ! Vạn linh nghe lời Linh Nhi — tiếp sức cho hai người!", "color": "#ff9ecb" },
+			{ "narrate": "Vạn Linh Chi Tâm bộc phát, thiên địa linh khí đổ về. Một kiếm cuối cùng của Lăng Thiên, bọc trong băng của Tô Tuyết và sinh khí của Linh Nhi, xuyên thẳng đại trận." },
+			{ "sfx": "boom" },
+			{ "music": "theme_victory" },
+			{ "narrate": "Huyết Thần Đại Trận vỡ vụn. Huyết Ma Lão Tổ trọng thương, quỳ rạp, không thể tin ba đứa trẻ lại phá được trận của hắn." },
+			{ "hide": "all" },
+			{ "goto": "route_check2" }
 		],
 		"route_check2": [
-			{ "if": "resolve", "eq": "revenge", "goto": "ending_revenge", "else": "ending_duty" }
+			{ "if": "style", "eq": "lazy", "goto": "ending_leisure", "else": "ending_legacy" }
 		],
-		"ending_unity": [
+		"ending_invincible": [
+			{ "music": "theme_victory" },
+			{ "narrate": "[Kết thúc: VÔ ĐỊCH SƯ TÔN]" },
+			{ "show": "co_huyen", "at": "center" },
+			{ "say": "Cơ Huyền", "text": "Ngươi muốn xem mặt lão sư phụ trốn chui trốn nhủi? Được. Nhìn cho kỹ.", "color": "#7ec8ff" },
+			{ "narrate": "Cơ Huyền bước một bước. Chỉ một bước. Huyết khí ngút trời của Lão Tổ tan biến như sương gặp nắng. Cả thế giới như nín thở dưới uy áp không đáy." },
+			{ "say": "Huyết Ma Lão Tổ", "text": "Cảnh... cảnh giới này... không thể có thật! Ngài... ngài vốn đã đứng trên cả Đại Đạo từ lâu rồi! Ta... ta chỉ là con kiến—", "color": "#ff5a5a" },
+			{ "say": "Cơ Huyền", "text": "Ngươi đụng tới đệ tử của ta. Chỉ vậy thôi. Tan đi.", "color": "#7ec8ff" },
+			{ "sfx": "boom" },
+			{ "narrate": "Một ý niệm. Huyết Ma Lão Tổ — cùng dã tâm ba trăm năm — hóa thành cát bụi. Thiên hạ cuối cùng đã thấy: Vân Hà Cốc thật sự giấu một vị Sư Tôn vô địch." },
+			{ "say": "【Hệ Thống】", "text": "Mở khóa danh hiệu tối cao: 【VÔ ĐỊCH SƯ TÔN】. Truyền thừa viên mãn, uy danh chấn động cửu thiên.", "color": "#ffd45e" },
+			{ "end": "invincible" }
+		],
+		"ending_legacy": [
 			{ "bg": "sunrise_mountain" },
-			{ "narrate": "[Kết thúc: SƯ MÔN BẤT DIỆT]" },
-			{ "show": "diep_tran", "at": "center" },
-			{ "say": "Diệp Trần", "text": "Sức mạnh này chưa từng là của riêng ta. Vì thế nó mới không thể bị đánh bại.", "color": "#7ec8ff" },
-			{ "narrate": "Thanh Vân Tông từ tro tàn vươn lên thành đệ nhất tông môn Bắc Vực. Người ta truyền tụng: nơi đó có một Sư Tôn mạnh nhất — mạnh vì ông khiến mọi đệ tử của mình đều mạnh." },
-			{ "say": "【Hệ Thống】", "text": "Tất cả nhiệm vụ hoàn thành. Đạt danh hiệu cao nhất: 【Vô Địch Sư Tôn】. Truyền thừa bất diệt.", "color": "#ffd45e" },
-			{ "end": "unity" }
+			{ "narrate": "[Kết thúc: TRUYỀN THỪA RỰC RỠ]" },
+			{ "show": "co_huyen", "at": "center" },
+			{ "say": "Cơ Huyền", "text": "Ta một chiêu cũng chưa cần ra. Là các con tự đứng lên, tự chiến thắng. Đó mới là truyền thừa thật sự.", "color": "#7ec8ff" },
+			{ "narrate": "Lăng Thiên, Tô Tuyết, Linh Nhi quỳ trước sư phụ, nước mắt lưng tròng. Từ đó, ba cái tên ấy vang danh thiên hạ — và phía sau họ, luôn là cái bóng lặng lẽ của Vân Hà Cốc." },
+			{ "say": "【Hệ Thống】", "text": "Đạt danh hiệu: 【Vô Địch Sư Tôn】. Đạo của ngươi: không phải tự mình vô địch, mà khiến đệ tử vô địch.", "color": "#ffd45e" },
+			{ "end": "legacy" }
 		],
-		"ending_duty": [
-			{ "bg": "sunrise_mountain" },
-			{ "narrate": "[Kết thúc: GÁNH VÁC THIÊN HẠ]" },
-			{ "show": "diep_tran", "at": "center" },
-			{ "say": "Diệp Trần", "text": "Sư phụ, con đã giữ lời. Thanh Vân không những sống lại — mà sẽ che chở cho cả Bắc Vực.", "color": "#7ec8ff" },
-			{ "narrate": "Diệp Trần đặt ra quy củ mới: mọi linh căn 'phế vật' bị thế nhân ruồng bỏ đều có một mái nhà ở Thanh Vân. Một thời đại mới bắt đầu." },
-			{ "say": "【Hệ Thống】", "text": "Đạt danh hiệu: 【Vô Địch Sư Tôn】. Đạo của ngươi là dựng xây.", "color": "#ffd45e" },
-			{ "end": "duty" }
-		],
-		"ending_revenge": [
-			{ "bg": "night_sky" },
-			{ "narrate": "[Kết thúc: MỐI THÙ ĐÃ TRẢ]" },
-			{ "show": "diep_tran", "at": "center" },
-			{ "say": "Diệp Trần", "text": "Mối thù năm xưa đã chôn cùng Huyết Ma. Nhưng sư phụ... vì sao con vẫn thấy trống rỗng?", "color": "#7ec8ff" },
-			{ "say": "Lâm Uyển", "text": "Vì báo thù chỉ là điểm bắt đầu, thưa sư phụ. Còn cả một sư môn cần người dẫn đường phía trước.", "color": "#ff9ecb" },
-			{ "say": "Diệp Trần", "text": "...Con nói đúng. Vậy thì, chúng ta đi tiếp. Con đường của Sư Tôn vẫn còn dài.", "color": "#7ec8ff" },
-			{ "say": "【Hệ Thống】", "text": "Đạt danh hiệu: 【Vô Địch Sư Tôn】. Hận đã buông, đạo mới khai.", "color": "#ffd45e" },
-			{ "end": "revenge" }
+		"ending_leisure": [
+			{ "bg": "valley" },
+			{ "narrate": "[Kết thúc: AN NHÀN VÔ ĐỊCH]" },
+			{ "show": "co_huyen", "at": "center" },
+			{ "say": "Cơ Huyền", "text": "Tốt lắm, các con tự dọn sạch rồi. Vậy ta yên tâm... ngủ tiếp.", "color": "#7ec8ff" },
+			{ "narrate": "Cơ Huyền ngáp dài, rót thêm một chén trà, ngả lưng trên ghế trúc giữa sơn cốc. Đệ tử của anh chấn động cửu châu, còn anh — vẫn chỉ là 'lão phế vật' lười nhất thiên hạ, và là Sư Tôn mạnh nhất mà không ai biết.", "color": "#ffffff" },
+			{ "say": "【Hệ Thống】", "text": "Đạt danh hiệu: 【Vô Địch Sư Tôn】. Cảnh giới nhân sinh: nằm thẳng mà vạn sự thành. Hoàn mỹ.", "color": "#ffd45e" },
+			{ "end": "leisure" }
 		]
 	}
 }

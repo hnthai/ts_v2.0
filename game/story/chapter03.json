@@ -1,58 +1,78 @@
 {
 	"id": "chapter03",
-	"title": "Chương 3: Tỉ Thí Bách Kiếm Môn",
+	"title": "Chương 3: Chấn Động Thiên Hạ",
 	"start": "start",
 	"blocks": {
 		"start": [
-			{ "bg": "sect_gate" },
-			{ "music": "theme_tense" },
-			{ "narrate": "Một năm trôi qua. Tin Thanh Vân Tông 'sống lại' truyền đến tai Bách Kiếm Môn — kẻ năm xưa lăm le nuốt chửng địa bàn này." },
-			{ "show": "bach_truong", "at": "center" },
-			{ "say": "Trưởng lão Bách", "text": "Một tông môn tàn tạ cũng dám dựng cờ? Ta cho ngươi một cơ hội: đệ tử hai bên tỉ thí. Thua thì sáp nhập vào Bách Kiếm Môn.", "color": "#9affa0" },
-			{ "show": "diep_tran", "at": "left" },
-			{ "say": "Diệp Trần", "text": "Tỉ thí cũng được. Nhưng nếu các vị thua, từ nay không được bén mảng tới Thanh Vân.", "color": "#7ec8ff" },
-			{ "say": "Trưởng lão Bách", "text": "Khẩu khí lớn đấy. Ta đợi xem đệ tử của ngươi có xứng với cái miệng đó không.", "color": "#9affa0" },
-			{ "goto": "match" }
+			{ "bg": "town" },
+			{ "music": "theme_calm" },
+			{ "narrate": "Nửa năm sau. Trên đường xuống trấn mua rượu cho sư phụ, Lăng Thiên gặp một thiếu nữ áo trắng đang bị truy sát vì 'Huyền Âm Băng Thể' — thể chất bị ma đạo thèm khát." },
+			{ "show": "to_tuyet", "at": "center" },
+			{ "say": "Tô Tuyết", "text": "Các ngươi muốn lấy thân thể ta luyện công? Vậy thì lấy cái xác lạnh này đi!", "color": "#bfe6ff" },
+			{ "show": "lang_thien", "at": "left" },
+			{ "say": "Lăng Thiên", "text": "Một kiếm này, sư phụ ta dạy. Cô nương đứng sau ta. Kiếm Thủ Hộ — TÁN!", "color": "#ffb066" },
+			{ "sfx": "clash" },
+			{ "narrate": "Một thiếu niên Trúc Cơ quét sạch cả đám truy binh Kim Đan. Tô Tuyết sững sờ." },
+			{ "say": "Tô Tuyết", "text": "Ngươi... một Trúc Cơ mà có kiếm ý như vậy? Sư phụ ngươi là ai?", "color": "#bfe6ff" },
+			{ "say": "Lăng Thiên", "text": "Sư phụ ta là cao nhân của Vân Hà Cốc. Người chỉ điểm ta một câu, ta ngộ ra cả con đường. Cô có muốn bái sư không?", "color": "#ffb066" },
+			{ "goto": "to_tuyet_join" }
 		],
-		"match": [
+		"to_tuyet_join": [
 			{ "hide": "all" },
+			{ "bg": "valley" },
+			{ "show": "co_huyen", "at": "center" },
+			{ "say": "Cơ Huyền", "text": "(Lại một đứa Băng Thể... thôi được.) Tiểu cô nương, ngươi mang một khối băng trong tim. Băng không phải để tự vệ — là để giữ cho thứ ngươi yêu không tan chảy. Ngẫm đi.", "color": "#7ec8ff" },
+			{ "narrate": "Tô Tuyết chấn động. Khối tâm ma lạnh lẽo bao năm nứt vỡ. Băng khí quanh người nàng lần đầu trở nên ôn nhu." },
+			{ "sfx": "chime" },
+			{ "say": "【Hệ Thống】", "text": "Thu nhận đệ tử [Tô Tuyết]. Nàng lập tức ngưng tụ Băng Tâm Đạo Thai. Sư Tôn nhận thưởng: Cửu Phẩm Băng Liên ×1, công pháp 'Hàn Nguyệt Quyết'.", "color": "#ffd45e" },
+			{ "say": "Tô Tuyết", "text": "Đệ tử Tô Tuyết, bái kiến sư phụ. (Một câu nói hóa giải tâm ma mười năm... sư phụ thật đáng sợ.)", "color": "#bfe6ff" },
+			{ "goto": "fame" }
+		],
+		"fame": [
 			{ "bg": "arena" },
 			{ "music": "theme_battle" },
-			{ "narrate": "Đài tỉ thí dựng giữa quảng trường. Lâm Uyển bước lên, đối mặt một đệ tử Trúc Cơ hậu kỳ của Bách Kiếm Môn." },
-			{ "show": "lam_uyen", "at": "center" },
-			{ "say": "Lâm Uyển", "text": "Sư phụ dạy: băng không phải để phòng thủ, mà để phong tỏa cả chiến trường.", "color": "#ff9ecb" },
-			{ "sfx": "clash" },
-			{ "narrate": "Cửu U Băng Thể bộc phát. Cả đài tỉ thí đóng băng trong nháy mắt. Đối thủ bị phong ấn, không kịp ra chiêu." },
-			{ "say": "Trưởng lão Bách", "text": "Cái gì?! Một phế căn... không, đây là Băng Thể thượng cổ! Sao một tông môn nhỏ lại có người như vậy?!", "color": "#9affa0" },
-			{ "goto": "system_boost" }
+			{ "narrate": "Đại hội Thiên Kiêu Bắc Vực. Lăng Thiên và Tô Tuyết tham dự — và một mình họ đánh bại toàn bộ thiên kiêu các đại tông môn. Cả Bắc Vực chấn động." },
+			{ "say": "Lăng Thiên", "text": "Kiếm của ta, học từ Vân Hà Cốc.", "color": "#ffb066" },
+			{ "say": "Tô Tuyết", "text": "Băng của ta, cũng vậy.", "color": "#bfe6ff" },
+			{ "narrate": "Lời đồn lan như cháy rừng: 'Vân Hà Cốc rốt cuộc giấu một vị Sư Tôn kinh thiên động địa nào?!'" },
+			{ "say": "【Hệ Thống】", "text": "Đệ tử chấn động thiên hạ! Phần thưởng cực phẩm kích hoạt: Sư Tôn cảnh giới ẩn (giả) thăng một bậc danh vọng. Linh thạch +50000.", "color": "#ffd45e" },
+			{ "goto": "rival" }
 		],
-		"system_boost": [
-			{ "say": "【Hệ Thống】", "text": "Đệ tử [Lâm Uyển] đột phá Kim Đan trong thực chiến. Sư Tôn đồng bộ: cảnh giới tăng vọt sang Kim Đan trung kỳ.", "color": "#ffd45e" },
-			{ "narrate": "Diệp Trần khẽ mỉm cười. Đây chính là con đường của Sư Tôn — anh không cướp cơ duyên của ai, anh tạo ra cơ duyên cho đệ tử, và cùng họ lớn mạnh." },
+		"rival": [
+			{ "hide": "all" },
+			{ "bg": "valley" },
+			{ "music": "theme_tense" },
+			{ "narrate": "Danh tiếng quá lớn cũng kéo theo phiền phức. Trưởng lão Bách của Huyền Thiên Tông — một đại tông kiêu ngạo — đích thân tới 'thử' Cơ Huyền, định cướp hai đệ tử về môn mình." },
+			{ "show": "bach_truong", "at": "right" },
+			{ "say": "Trưởng lão Bách", "text": "Lão phế vật của sơn cốc nghèo? Hừ. Hai đứa nhỏ kia lãng phí ở chỗ ngươi. Để bổn tọa thu chúng về Huyền Thiên Tông, coi như ngươi có phúc.", "color": "#9affa0" },
+			{ "show": "co_huyen", "at": "left" },
+			{ "say": "Cơ Huyền", "text": "Ồ. Phiền quá. Lão ăn miếng trà rồi về đi. Đệ tử của ta, không bán.", "color": "#7ec8ff" },
+			{ "goto": "rival_choice" }
+		],
+		"rival_choice": [
 			{ "choice": [
-				{ "text": "Ra hiệu cho Lâm Uyển dừng tay, giữ thể diện cho đối thủ.", "set": { "mercy": "yes" }, "goto": "mercy" },
-				{ "text": "Để trận đấu kết thúc dứt khoát, dằn mặt Bách Kiếm Môn.", "set": { "mercy": "no" }, "goto": "harsh" }
+				{ "text": "Để Lăng Thiên tự đứng ra dạy lão một bài học.", "set": { "face": "disciple" }, "goto": "rival_disciple" },
+				{ "text": "Búng nhẹ một ngón tay — chỉ lộ một tia uy áp.", "set": { "face": "hint" }, "goto": "rival_hint" }
 			] }
 		],
-		"mercy": [
-			{ "say": "Lâm Uyển", "text": "Đệ tử dừng tay. Tiền bối, mong từ nay hai môn hòa hảo.", "color": "#ff9ecb" },
-			{ "say": "Trưởng lão Bách", "text": "...Thanh Vân có đệ tử biết tiến biết lui. Lão phu phục. Bách Kiếm Môn xin kết giao.", "color": "#9affa0" },
-			{ "goto": "warning" }
+		"rival_disciple": [
+			{ "show": "lang_thien", "at": "center" },
+			{ "say": "Lăng Thiên", "text": "Trưởng lão muốn thử sư môn ta? Vậy mời tiếp một kiếm.", "color": "#ffb066" },
+			{ "sfx": "clash" },
+			{ "say": "Trưởng lão Bách", "text": "Khoan—! Kiếm ý này... một đệ tử Trúc Cơ mà ép được Nguyên Anh như bổn tọa lùi bước?! Sư phụ ngươi... rốt cuộc dạy cái gì?!", "color": "#9affa0" },
+			{ "goto": "rival_end" }
 		],
-		"harsh": [
-			{ "say": "Lâm Uyển", "text": "Băng Phong Thiên Lao!", "color": "#ff9ecb" },
-			{ "sfx": "boom" },
-			{ "say": "Trưởng lão Bách", "text": "Dừng tay! Ta nhận thua! Từ nay Bách Kiếm Môn tuyệt không đụng tới Thanh Vân!", "color": "#9affa0" },
-			{ "goto": "warning" }
+		"rival_hint": [
+			{ "narrate": "Cơ Huyền lười nhác búng một ngón tay. Một tia uy áp thoáng qua — nhẹ như gió, nhưng Trưởng lão Bách cảm thấy cả linh hồn mình quỳ rạp." },
+			{ "say": "Trưởng lão Bách", "text": "Uy áp... này... là... KHÔNG! Cảnh giới của vị này thâm sâu đến mức bổn tọa không thấy đáy! Ta... ta đã đắc tội đại nhân!", "color": "#9affa0" },
+			{ "goto": "rival_end" }
 		],
-		"warning": [
-			{ "hide": "all" },
-			{ "bg": "sect_gate" },
-			{ "music": "theme_tense" },
-			{ "say": "Trưởng lão Bách", "text": "Diệp chưởng môn, lão phu nói thật một điều. Gần đây Huyết Ma Giáo trỗi dậy, thôn tính khắp Bắc Vực. Ngươi nổi danh quá nhanh... e sẽ lọt vào mắt chúng.", "color": "#9affa0" },
-			{ "show": "diep_tran", "at": "center" },
-			{ "say": "Diệp Trần", "text": "(Huyết Ma...) Đa tạ nhắc nhở. Ta và chúng — vốn đã có món nợ máu chưa đòi.", "color": "#7ec8ff" },
-			{ "say": "【Hệ Thống】", "text": "Cảnh báo: Huyết Ma Giáo định vị được Thanh Vân Tông. Nhiệm vụ chuỗi chính sắp khởi động.", "color": "#ffd45e" },
+		"rival_end": [
+			{ "show": "co_huyen", "at": "left" },
+			{ "say": "Cơ Huyền", "text": "Trà nguội rồi. Về đi.", "color": "#7ec8ff" },
+			{ "say": "Trưởng lão Bách", "text": "Vâng vâng! Tiền bối thứ lỗi! Huyền Thiên Tông từ nay nguyện làm tai mắt cho Vân Hà Cốc!", "color": "#9affa0" },
+			{ "narrate": "Lão cuống cuồng cáo lui. Cơ Huyền thở dài — anh chỉ muốn yên thân, nhưng danh tiếng cứ như tuyết lăn, càng lúc càng lớn." },
+			{ "say": "【Hệ Thống】", "text": "Cảnh báo: Ma đạo đã ngửi thấy 'mùi cao nhân & thiên tài' từ Vân Hà Cốc. Huyết Ma Giáo bắt đầu dòm ngó.", "color": "#ffd45e" },
 			{ "next_chapter": "chapter04" }
 		]
 	}

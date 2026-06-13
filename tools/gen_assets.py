@@ -86,6 +86,7 @@ SCENES = {
     "forest":           ((40, 70, 50), (90, 120, 70)),
     "arena":            ((90, 80, 110), (160, 150, 140)),
     "demonic_altar":    ((40, 8, 12), (110, 10, 20)),
+    "valley":           ((150, 195, 175), (210, 215, 170)),
 }
 
 
@@ -105,7 +106,7 @@ def build_bg(name, top, bottom):
         glow(img, (W // 2, int(H * 0.45)), 220, (255, 230, 160, 120))
     # layered mountains for outdoor scenes
     if name in ("sect_gate", "sunrise_mountain", "night_sky", "forest",
-                "courtyard_night", "town"):
+                "courtyard_night", "town", "valley"):
         mountains(img, _lerp(top, bottom, 0.6), int(H * 0.55), 70, 180)
         mountains(img, _lerp(bottom, (0, 0, 0), 0.3), int(H * 0.7), 50, 230)
     # caption tag (small, corner) — easy to spot which placeholder this is
@@ -116,12 +117,12 @@ def build_bg(name, top, bottom):
 
 # character id -> (name, robe color)
 CHARS = {
-    "diep_tran":   ("Diệp Trần", (90, 150, 220)),
-    "su_phu":      ("Vân Lão", (200, 190, 150)),
-    "lam_uyen":    ("Lâm Uyển", (235, 150, 200)),
-    "trieu_phong": ("Triệu Phong", (235, 165, 90)),
+    "co_huyen":    ("Cơ Huyền", (90, 150, 220)),
+    "lang_thien":  ("Lăng Thiên", (235, 165, 90)),
+    "to_tuyet":    ("Tô Tuyết", (150, 205, 235)),
+    "linh_nhi":    ("Linh Nhi", (235, 150, 200)),
     "bach_truong": ("Trưởng lão Bách", (150, 230, 160)),
-    "ma_ton":      ("Huyết Ma Tôn", (210, 60, 60)),
+    "ma_ton":      ("Huyết Ma Lão Tổ", (210, 60, 60)),
 }
 
 

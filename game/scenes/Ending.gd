@@ -22,7 +22,7 @@ func _ready() -> void:
 	col.add_child(t)
 
 	var sub := Label.new()
-	sub.text = "Cảm ơn bạn đã đồng hành cùng Diệp Trần\ntrên con đường trở thành Sư Tôn vô địch."
+	sub.text = "Cảm ơn bạn đã đồng hành cùng Cơ Huyền\nvà các đệ tử của Vân Hà Cốc."
 	sub.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	sub.add_theme_font_size_override("font_size", 24)
 	col.add_child(sub)
